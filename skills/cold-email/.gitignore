@@ -1,0 +1,14 @@
+# Never commit secrets or lead data
+configs/
+*.config.json
+.env
+*.env
+leads.csv
+enriched.csv
+*.local
+
+# OS / editor
+.DS_Store
+node_modules/
+__pycache__/
+*.pyc

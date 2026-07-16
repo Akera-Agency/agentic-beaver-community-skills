@@ -1,0 +1,39 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Akera-Agency/agentic-beaver-community-skills/main/registry.schema.json",
+  "registry": "agentic-beaver-community-skills",
+  "owner": "Akera-Agency",
+  "version": "1.0.0",
+  "updated": "2026-07-16",
+  "description": "Registry of installable Agentic Beaver community skills. An agent reads this file, picks a skill by id, and copies skills/<path>/ into its own skills directory, then follows that skill's SKILL.md.",
+  "install": {
+    "how": "For a chosen skill, copy the entire folder at skills/<path>/ into your agent's skills directory (e.g. .../skills/<id>/), then read its SKILL.md. Each skill is self-contained: SKILL.md + optional docs/, references/, scripts/.",
+    "entrypoint": "SKILL.md"
+  },
+  "skills": [
+    {
+      "id": "cold-email",
+      "name": "Cold Email — Full Outbound Pipeline",
+      "path": "skills/cold-email",
+      "entrypoint": "SKILL.md",
+      "version": "3.0.0",
+      "description": "End-to-end cold outbound sales pipeline: SCRAPE → ENRICH → CRM → RESEARCH → WRITE → SEND, plus reply and objection handling.",
+      "triggers": [
+        "cold email",
+        "cold outreach",
+        "find leads",
+        "scrape leads",
+        "enrich emails",
+        "add to CRM",
+        "research this prospect",
+        "write a cold email",
+        "follow-up sequence",
+        "launch a campaign",
+        "handle this objection",
+        "reply to this prospect"
+      ],
+      "tags": ["sales", "outbound", "email", "crm", "research"],
+      "maintainer": "Akera Agency",
+      "source": "https://github.com/Akera-Agency/cold-email"
+    }
+  ]
+}
