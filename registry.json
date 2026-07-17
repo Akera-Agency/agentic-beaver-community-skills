@@ -31,9 +31,18 @@
         "handle this objection",
         "reply to this prospect"
       ],
-      "tags": ["sales", "outbound", "email", "crm", "research"],
+      "tags": [
+        "sales",
+        "outbound",
+        "email",
+        "crm",
+        "research"
+      ],
       "maintainer": "Akera Agency",
-      "source": "https://github.com/Akera-Agency/cold-email"
+      "source": "https://github.com/Akera-Agency/cold-email",
+      "media": {
+        "video": "https://www.youtube.com/watch?v=g4x_KW-imVI&t=10s"
+      }
     }
   ]
 }
