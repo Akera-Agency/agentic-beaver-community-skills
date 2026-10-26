@@ -37,6 +37,15 @@ Each skill is a self-contained folder under [`skills/`](./skills): a `SKILL.md`
 | id | what it does | version |
 |----|--------------|---------|
 | [`cold-email`](./skills/cold-email) | End-to-end cold outbound pipeline — scrape → enrich → CRM → research → write → send, plus reply/objection handling | 3.0.0 |
+| [`babysit-pr`](./skills/babysit-pr) | Monitor a PR through CI, review, conflicts, and merge readiness | 1.0.0 |
+| [`council`](./skills/council) | Get independent feedback from three model providers | 1.0.0 |
+| [`file-pr`](./skills/file-pr) | Review a branch and file a concise pull request | 1.0.0 |
+| [`full-send`](./skills/full-send) | Take a coding task through proof, review, PR, and merge | 1.0.0 |
+| [`full-stop`](./skills/full-stop) | Make a coding PR merge-ready without merging it | 1.0.0 |
+| [`leaving-pr-comments`](./skills/leaving-pr-comments) | Format transparent agent-authored PR comments | 1.0.0 |
+| [`modernize`](./skills/modernize) | Reassess and safely rebase an aging PR | 1.0.0 |
+| [`sol-loop`](./skills/sol-loop) | Run bounded GPT Sol review rounds over code changes | 1.0.0 |
+| [`takeover`](./skills/takeover) | Finish inherited work while preserving contributor credit | 1.0.0 |
 
 _(The table mirrors [`registry.json`](./registry.json); the JSON is the source of truth.)_
 
@@ -52,12 +61,16 @@ agentic-beaver-community-skills/
 ├── CONTRIBUTING.md         ← how to add a new skill
 ├── LICENSE                ← MIT
 └── skills/
-    └── cold-email/        ← one self-contained skill
-        ├── SKILL.md       ← entrypoint
-        ├── README.md
-        ├── docs/
-        ├── references/
-        └── scripts/
+    ├── cold-email/        ← one self-contained skill
+    ├── babysit-pr/
+    ├── council/
+    ├── file-pr/
+    ├── full-send/
+    ├── full-stop/
+    ├── leaving-pr-comments/
+    ├── modernize/
+    ├── sol-loop/
+    └── takeover/
 ```
 
 ## Adding a skill

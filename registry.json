@@ -2,8 +2,8 @@
   "$schema": "https://raw.githubusercontent.com/Akera-Agency/agentic-beaver-community-skills/main/registry.schema.json",
   "registry": "agentic-beaver-community-skills",
   "owner": "Akera-Agency",
-  "version": "1.0.0",
-  "updated": "2026-07-16",
+  "version": "2.0.0",
+  "updated": "2026-10-26",
   "description": "Registry of installable Agentic Beaver community skills. An agent reads this file, picks a skill by id, and copies skills/<path>/ into its own skills directory, then follows that skill's SKILL.md.",
   "install": {
     "how": "For a chosen skill, copy the entire folder at skills/<path>/ into your agent's skills directory (e.g. .../skills/<id>/), then read its SKILL.md. Each skill is self-contained: SKILL.md + optional docs/, references/, scripts/.",
@@ -43,6 +43,114 @@
       "media": {
         "video": "https://www.youtube.com/watch?v=g4x_KW-imVI&t=10s"
       }
+    },
+    {
+      "id": "babysit-pr",
+      "name": "Babysit PR",
+      "path": "skills/babysit-pr",
+      "entrypoint": "SKILL.md",
+      "version": "1.0.0",
+      "description": "Monitor a pull request through CI, automated review, conflict handling, and merge readiness without noisy polling.",
+      "triggers": ["babysit this PR", "watch this PR", "monitor this pull request"],
+      "tags": ["github", "pull-request", "ci", "review"],
+      "maintainer": "Akera Agency",
+      "source": "https://github.com/t3dotgg/tstack/tree/main/skills/babysit-pr"
+    },
+    {
+      "id": "council",
+      "name": "Council",
+      "path": "skills/council",
+      "entrypoint": "SKILL.md",
+      "version": "1.0.0",
+      "description": "Bring in three strong delegates from different model providers for independent review and synthesis.",
+      "triggers": ["council"],
+      "tags": ["review", "delegation", "multi-model"],
+      "maintainer": "Akera Agency",
+      "source": "https://github.com/t3dotgg/tstack/tree/main/skills/council"
+    },
+    {
+      "id": "file-pr",
+      "name": "File PR",
+      "path": "skills/file-pr",
+      "entrypoint": "SKILL.md",
+      "version": "1.0.0",
+      "description": "Review a branch diff and open a concise, human-readable pull request with safe attribution.",
+      "triggers": ["file a PR", "open a PR", "create a pull request"],
+      "tags": ["github", "pull-request", "delivery"],
+      "maintainer": "Akera Agency",
+      "source": "https://github.com/t3dotgg/tstack/tree/main/skills/file-pr"
+    },
+    {
+      "id": "full-send",
+      "name": "Full Send",
+      "path": "skills/full-send",
+      "entrypoint": "SKILL.md",
+      "version": "1.0.0",
+      "description": "Take a coding task from implementation through proof, review, PR monitoring, and merge without supervision.",
+      "triggers": ["full send"],
+      "tags": ["coding", "github", "autonomous", "delivery"],
+      "maintainer": "Akera Agency",
+      "source": "https://github.com/t3dotgg/tstack/tree/main/skills/full-send"
+    },
+    {
+      "id": "full-stop",
+      "name": "Full Stop",
+      "path": "skills/full-stop",
+      "entrypoint": "SKILL.md",
+      "version": "1.0.0",
+      "description": "Take a coding task through proof and PR readiness, but leave the final merge to the user.",
+      "triggers": ["full stop"],
+      "tags": ["coding", "github", "review", "delivery"],
+      "maintainer": "Akera Agency",
+      "source": "https://github.com/t3dotgg/tstack/tree/main/skills/full-stop"
+    },
+    {
+      "id": "leaving-pr-comments",
+      "name": "Leaving PR Comments",
+      "path": "skills/leaving-pr-comments",
+      "entrypoint": "SKILL.md",
+      "version": "1.0.0",
+      "description": "Format concise, transparent agent-authored GitHub comments posted on a user's behalf.",
+      "triggers": ["comment on this PR", "reply to this review", "leave a GitHub comment"],
+      "tags": ["github", "pull-request", "comments", "attribution"],
+      "maintainer": "Akera Agency",
+      "source": "https://github.com/t3dotgg/tstack/tree/main/skills/leaving-pr-comments"
+    },
+    {
+      "id": "modernize",
+      "name": "Modernize PR",
+      "path": "skills/modernize",
+      "entrypoint": "SKILL.md",
+      "version": "1.0.0",
+      "description": "Reassess and safely rebase an aging pull request against the current product and codebase.",
+      "triggers": ["modernize this PR", "rebase this PR", "update this old pull request"],
+      "tags": ["github", "pull-request", "rebase", "maintenance"],
+      "maintainer": "Akera Agency",
+      "source": "https://github.com/t3dotgg/tstack/tree/main/skills/modernize"
+    },
+    {
+      "id": "sol-loop",
+      "name": "Sol Loop",
+      "path": "skills/sol-loop",
+      "entrypoint": "SKILL.md",
+      "version": "1.0.0",
+      "description": "Run bounded GPT Sol review rounds over a code diff, fix verified findings, and prevent review-driven scope creep.",
+      "triggers": ["sol loop"],
+      "tags": ["code-review", "quality", "openai", "delivery"],
+      "maintainer": "Akera Agency",
+      "source": "https://github.com/t3dotgg/tstack/tree/main/skills/sol-loop"
+    },
+    {
+      "id": "takeover",
+      "name": "Takeover",
+      "path": "skills/takeover",
+      "entrypoint": "SKILL.md",
+      "version": "1.0.0",
+      "description": "Take responsibility for an existing PR, branch, or agent thread while preserving contributor credit and intent.",
+      "triggers": ["take over this PR", "take over this branch", "takeover"],
+      "tags": ["github", "handoff", "pull-request", "delivery"],
+      "maintainer": "Akera Agency",
+      "source": "https://github.com/t3dotgg/tstack/tree/main/skills/takeover"
     }
   ]
 }
